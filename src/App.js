@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { Container } from '@mui/material';
 
-function App() {
+import Top from './pages/Top';
+import Navigation from './pages/Navigation';
+import Carousel from './pages/Carousel';
+import CustomContainer from './pages/Container';
+import Service from './pages/Service';
+import Footer from './pages/Footer'; 
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   <> {/* jsx에서는 이렇게 꼭 큰걸로 감싸줘야한다.*/}
+      <Top />
+      <Navigation />
+      <Carousel />
+      <Container>
+          <CustomContainer />
+          <Service />
+      </Container>
+      <Footer />
+   </>
+  )
 }
 
-export default App;
+export default App
