@@ -6,7 +6,7 @@ body {
 }
 a, a:link{
   text-decoration: none;
-  color:#777 !important;
+  color:#777;
 }
 .en {
   font-family: "Karla", sans-serif;
@@ -17,7 +17,7 @@ a, a:link{
   width:100px;
 }
 .text-center{
-  text-align: center;
+  text-align:center;
 }
 .bar{
   display:inline-block;
@@ -37,38 +37,40 @@ a, a:link{
 .search{
    position:relative;
 }
-.carousel{
+
+.carousel {
   width:100%;
   height:700px;
   margin:auto;
-  overflow:hidden;
+  overflow: hidden;
   position:relative;
   display:flex; 
 }
-
 .carousel img{
-  object-fit: cover;
-  width:100%;
-  height:700px;
-  position:absolute;
-  top:0;
-  left:0;
-  transition: transform 0.5s ease-in-out;  /* transform이 걸려있는걸 transition 해라 */
+   object-fit:cover;
+   width:100%;
+   height:700px;
+   position:absolute;
+   top:0;
+   left:0;
+   transition: transform 0.5s ease-in-out;   /* transform이 걸려있는걸 transition 해라 */
 }
+
 .slide-enter{
-  transform: translateX(-100%);
+   transform: translateX(-100%);
 }
-.slide-enter-active{
+.slide-enter-active {
   transform: translateX(0%);
 }
-.slide-exit{
+.slide-exit {
   transform: translateX(0%);
 }
-.slide-exit-active{
+.slide-exit-active {
   transform: translateX(100%);
 }
+
 .activeBox{
-  padding:40px;
-  border:1px solid var(--bs-border-color);
-  border-top:none;
+   padding:40px;
+   border:1px solid var(--bs-border-color);
+   border-top:none;
 }
